@@ -1,2 +1,4 @@
+<!-- idタグ（＃）を探して、render....エスケープして置き換える -->
 $("#follow_form").html("<%= escape_javascript(render('users/unfollow')) %>");
+<!-- idタグ（＃）を探して、ユーザをカウントし直す -->
 $("#followers").html('<%= @user.followers.count %>');
